@@ -1,0 +1,22 @@
+[docker]
+  [docker.dockerConfig]
+    enable = true
+    name = 'project1'
+    registry = 'docker.wso2.com'
+    tag = 'v1'
+    buildImage = true
+    dockerHost = 'tcp://localhost:2375'
+    #dockerCertPath = ''
+    baseImage = 'wso2/wso2micro-gw:latest'
+    #enableDebug = true
+    #debugPort = 
+    #push = ''
+    username = 'praddocker23'
+    password = 'Jesus7179@'
+    #cmd = 'CMD gateway ${APP}'
+  [docker.dockerCopyFiles]
+    enable = true
+    [[docker.dockerCopyFiles.files]]
+        source = '/Software_Development/Workspace/micro-gateway/product-microgateway/distribution/resources/conf/micro-gw.conf'
+        target = '/Software_Development/Workspace/micro-gateway/product-microgateway/distribution/resources/conf/micro-gw.conf'
+        isBallerinaConf = false
